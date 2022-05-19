@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-vid=cv.VideoCapture('')
+vid=cv.VideoCapture('place the video dataset location')
 vid.set(cv.CAP_PROP_POS_MSEC, 1 * 1000)
 ret1,frame1=vid.read()
 prvs=cv.cvtColor(frame1,cv.COLOR_BGR2GRAY)
